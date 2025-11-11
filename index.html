@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Techpoint - Solusi Digital Masa Depan</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-sans bg-pink-50 text-gray-700">
+
+  <header class="fixed top-0 left-0 w-full bg-white/80 backdrop-blur-md shadow-sm z-50 transition">
+    <div class="container mx-auto flex justify-between items-center px-6 py-4">
+      <h1 class="text-2xl font-bold text-pink-500">Techpoint</h1>
+      <nav id="menu" class="hidden md:flex space-x-8 text-gray-600">
+        <a href="#home" class="hover:text-pink-500 transition">Beranda</a>
+        <a href="#features" class="hover:text-pink-500 transition">Fitur</a>
+        <a href="#about" class="hover:text-pink-500 transition">Tentang</a>
+        <a href="#contact" class="hover:text-pink-500 transition">Kontak</a>
+      </nav>
+      <button id="menu-btn" class="md:hidden text-pink-500 text-3xl focus:outline-none">☰</button>
+    </div>
+    
+    <div id="mobile-menu" class="hidden flex-col space-y-4 bg-white px-6 py-4 md:hidden shadow-md">
+      <a href="#home" class="hover:text-pink-500">Beranda</a>
+      <a href="#features" class="hover:text-pink-500">Fitur</a>
+      <a href="#about" class="hover:text-pink-500">Tentang</a>
+      <a href="#contact" class="hover:text-pink-500">Kontak</a>
+    </div>
+  </header>
+
+  <section id="home" class="h-screen flex flex-col justify-center items-center text-center px-6 bg-gradient-to-br from-pink-100 to-pink-200">
+    <h2 class="text-4xl md:text-6xl font-bold text-gray-800 mb-4 animate-fade-in">Bangun Masa Depan Digital Bersama Kami</h2>
+    <p class="text-lg md:text-xl text-gray-600 mb-6 max-w-2xl">Kami menciptakan solusi digital yang inovatif untuk membantu bisnis Anda berkembang di dunia yang serba cepat.</p>
+    <a href="#contact" class="bg-pink-500 hover:bg-pink-600 text-white px-8 py-3 rounded-full font-semibold shadow-md transition">Hubungi Kami</a>
+  </section>
+ 
+  <section id="features" class="py-20 bg-white">
+    <div class="container mx-auto text-center px-6">
+      <h3 class="text-3xl font-bold text-gray-800 mb-12">Fitur Unggulan Kami</h3>
+      <div class="grid md:grid-cols-3 gap-10">
+        <div class="p-8 bg-pink-50 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+          <div class="text-pink-500 text-5xl mb-4">⚙</div>
+          <h4 class="text-xl font-semibold mb-2">Automasi Cerdas</h4>
+          <p>Meningkatkan efisiensi bisnis dengan sistem otomatisasi canggih berbasis AI.</p>
+        </div>
+        <div class="p-8 bg-pink-50 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+          <div class="text-pink-500 text-5xl mb-4">🔒</div>
+          <h4 class="text-xl font-semibold mb-2">Keamanan Premium</h4>
+          <p>Perlindungan data menyeluruh dengan teknologi enkripsi terkini.</p>
+        </div>
+        <div class="p-8 bg-pink-50 rounded-2xl shadow hover:shadow-lg transition transform hover:-translate-y-2">
+          <div class="text-pink-500 text-5xl mb-4">☁</div>
+          <h4 class="text-xl font-semibold mb-2">Cloud Integration</h4>
+          <p>Akses sistem kapan pun dan di mana pun dengan konektivitas cloud yang aman.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="py-20 bg-pink-100">
+    <div class="container mx-auto flex flex-col md:flex-row items-center gap-10 px-6">
+      <img src="https://cdn-icons-png.flaticon.com/512/2920/2920264.png" alt="Tentang Kami" class="w-64 mx-auto animate-fade-in">
+      <div>
+        <h3 class="text-3xl font-bold text-gray-800 mb-4">Tentang Techpoint</h3>
+        <p class="text-gray-600 mb-4">Techpoint adalah perusahaan teknologi yang menghadirkan solusi digital kreatif untuk memperkuat daya saing bisnis di era modern.</p>
+        <p class="text-gray-600">Kami percaya bahwa inovasi bukan sekadar alat, tapi budaya yang membentuk masa depan.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="py-20 bg-white">
+    <div class="container mx-auto text-center px-6">
+      <h3 class="text-3xl font-bold mb-8 text-gray-800">Hubungi Kami</h3>
+      <form class="max-w-md mx-auto bg-pink-50 p-8 rounded-2xl shadow space-y-4">
+        <input type="text" placeholder="Nama Anda" class="w-full p-3 border border-pink-200 rounded-lg focus:ring-2 focus:ring-pink-400 outline-none">
+        <input type="email" placeholder="Email Anda" class="w-full p-3 border border-pink-200 rounded-lg focus:ring-2 focus:ring-pink-400 outline-none">
+        <textarea rows="4" placeholder="Pesan Anda" class="w-full p-3 border border-pink-200 rounded-lg focus:ring-2 focus:ring-pink-400 outline-none"></textarea>
+        <button type="submit" class="w-full bg-pink-500 hover:bg-pink-600 text-white py-3 rounded-lg font-semibold transition">Kirim Pesan</button>
+      </form>
+    </div>
+  </section>
+  
+  <footer class="bg-pink-500 text-white text-center py-6">
+    <p>&copy; 2025 Techpoint. All Rights Reserved.</p>
+    <div class="flex justify-center mt-3 space-x-4">
+      <a href="#" class="hover:text-gray-200 transition">Instagram</a>
+      <a href="#" class="hover:text-gray-200 transition">LinkedIn</a>
+      <a href="#" class="hover:text-gray-200 transition">GitHub</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuBtn = document.getElementById('menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuBtn.addEventListener('click', () => {
+      mobileMenu.classList.toggle('hidden');
+    });
+  </script>
+
+</body>
+</html>
